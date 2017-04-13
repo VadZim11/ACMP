@@ -29,7 +29,7 @@ class Coord implements Comparable<Coord>{
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(new File("INPUT.TXT"));
+        Scanner sc = new Scanner(new File("input.txt"));
         int h = sc.nextInt();
         int m = sc.nextInt();
         int n = sc.nextInt();
@@ -96,7 +96,7 @@ public class Main {
         printInFile(String.valueOf((path-1)*5));
     }
     private  static void printInFile(String text) throws IOException {
-        FileWriter wr = new FileWriter(new File("OUTPUT.TXT"));
+        FileWriter wr = new FileWriter(new File("output.txt"));
         wr.write(text);
         wr.close();
         System.exit(0);
